@@ -34,19 +34,19 @@
   ]},
 { "hdr": "241", "rax": "641", "dbg": true, "cmd": {"22": "5005"}, "freq": 15,
   "signals": [
-    {"id": "HOLDEN_TP_FL_BCM", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
+    {"id": "HOLDEN_TP_FL_241", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
   ]},
 { "hdr": "241", "rax": "641", "dbg": true, "cmd": {"22": "5006"}, "freq": 15,
   "signals": [
-    {"id": "HOLDEN_TP_FR_BCM", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+    {"id": "HOLDEN_TP_FR_241", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
   ]},
 { "hdr": "241", "rax": "641", "dbg": true, "cmd": {"22": "5007"}, "freq": 15,
   "signals": [
-    {"id": "HOLDEN_TP_RR_BCM", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
+    {"id": "HOLDEN_TP_RR_241", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
   ]},
 { "hdr": "241", "rax": "641", "dbg": true, "cmd": {"22": "5008"}, "freq": 15,
   "signals": [
-    {"id": "HOLDEN_TP_RL_BCM", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
+    {"id": "HOLDEN_TP_RL_241", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
   ]},
 { "hdr": "257", "rax": "657", "dbg": true, "cmd": {"22": "28CB"}, "freq": 10,
   "signals": [
@@ -78,13 +78,13 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "000D"}, "freq": 0.25,
   "signals": [
-    {"id": "HOLDEN_VSS",      "path": "Movement", "fmt": { "len": 8, "max": 255, "nullmax": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"},
-    {"id": "HOLDEN_2500_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255,                 "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+    {"id": "HOLDEN_VSS",     "path": "Movement", "fmt": { "len": 8, "max": 255,                 "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"},
+    {"id": "HOLDEN_VSS_7E0", "path": "Movement", "fmt": { "len": 8, "max": 255, "nullmax": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "0010"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MAF",     "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "gramsPerSecond" }, "name": "Mass airflow sensor", "suggestedMetric": "massAirFlow"},
-    {"id": "HOLDEN_MAF_7E0", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "gramsPerSecond" }, "name": "Mass airflow sensor"}
+    {"id": "HOLDEN_MAF",     "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "gramsPerSecond" }, "name": "Mass airflow sensor"},
+    {"id": "HOLDEN_MAF_7E0", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "gramsPerSecond" }, "name": "Mass airflow sensor", "suggestedMetric": "massAirFlow"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "002F"}, "freq": 30,
   "signals": [
@@ -109,7 +109,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "009D"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_TOT_FUEL_CONS_RATE", "path": "Fuel", "fmt": { "len": 16, "max": 1310.7, "mul": 200, "div": 10000, "unit": "gramsPerSecond" }, "name": "Total fuel consumption rate"}
+    {"id": "HOLDEN_TOTAL_FUEL_CONSUMPTION_RATE", "path": "Fuel", "fmt": { "len": 16, "max": 1310.7, "mul": 200, "div": 10000, "unit": "gramsPerSecond" }, "name": "Total fuel consumption rate"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1124"}, "freq": 1,
   "signals": [
@@ -117,7 +117,8 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1141"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_IGN_1_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Ignition 1 voltage"}
+    {"id": "HOLDEN_IGN_1_V",     "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Ignition 1 voltage", "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "HOLDEN_IGN_1_V_7E0", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Ignition 1 voltage"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1144"}, "freq": 1,
   "signals": [
@@ -131,7 +132,7 @@
   "signals": [
     {"id": "HOLDEN_EGR_V", "path": "Engine", "fmt": { "len": 8, "max": 5, "div": 51, "unit": "volts" }, "name": "Exhaust gas recirculation voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1154"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1154"}, "freq": 1,
   "signals": [
     {"id": "HOLDEN_EOT_CALC", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Calculated engine oil temperature", "suggestedMetric": "engineOilTemperature"}
   ]},
@@ -155,7 +156,7 @@
   "signals": [
     {"id": "HOLDEN_IDLE_AIR_CTRL_POS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Idle air control position"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1192"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1192"}, "freq": 0.25,
   "signals": [
     {"id": "HOLDEN_DES_IDLE_SPD", "path": "Movement", "fmt": { "len": 8, "max": 3187.5, "mul": 12.5, "unit": "rpm" }, "name": "Desired idle speed"}
   ]},
@@ -205,11 +206,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11EA"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_CNT_5", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 5"}
+    {"id": "HOLDEN_MISFIRES_C5_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 5"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11EB"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_CNT_6", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 6"}
+    {"id": "HOLDEN_MISFIRES_C6_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 6"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11EC"}, "freq": 1,
   "signals": [
@@ -221,11 +222,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11F8"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HIST_5", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 5"}
+    {"id": "HOLDEN_MIS_HISTORY_5", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 5"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11F9"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HIST_6", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 6"}
+    {"id": "HOLDEN_MIS_HISTORY_6", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 6"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11FA"}, "freq": 1,
   "signals": [
@@ -241,35 +242,35 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1201"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HIST_1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 1"}
+    {"id": "HOLDEN_MIS_HISTORY_1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1202"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HIST_2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 2"}
+    {"id": "HOLDEN_MIS_HISTORY_2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 2"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1203"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HIST_3", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 3"}
+    {"id": "HOLDEN_MIS_HISTORY_3", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 3"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1204"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HIST_4", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 4"}
+    {"id": "HOLDEN_MIS_HISTORY_4", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1205"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_CNT_2", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 2"}
+    {"id": "HOLDEN_MISFIRES_C2_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 2"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1206"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_CNT_1", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 1"}
+    {"id": "HOLDEN_MISFIRES_C1_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1207"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_CNT_3", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 3"}
+    {"id": "HOLDEN_MISFIRES_C3_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 3"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1208"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_CNT_4", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 4"}
+    {"id": "HOLDEN_MISFIRES_C4_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1251"}, "freq": 1,
   "signals": [
@@ -289,11 +290,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "12C3"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_INJ_DUTY_BANK_1", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 1"}
+    {"id": "HOLDEN_INJECTOR_DUTY_CYCLE_BANK_1", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "12C4"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_INJ_DUTY_BANK_2", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 2"}
+    {"id": "HOLDEN_INJECTOR_DUTY_CYCLE_BANK_2", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 2"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "12D9"}, "freq": 1,
   "signals": [
@@ -305,11 +306,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "13AF"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_COOLING_FAN_MOTOR", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Cooling fan motor command"}
+    {"id": "HOLDEN_COOLING_FAN_MOTOR_CMD", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Cooling fan motor command"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "1470"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_EOP", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"}
+    {"id": "HOLDEN_EOP_DA11", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1538"}, "freq": 5,
   "signals": [
@@ -360,7 +361,8 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1940"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_ATF_T_VAR_1", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 1"}
+    {"id": "HOLDEN_ATF_T_VAR_1",     "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 1", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "HOLDEN_ATF_T_VAR_1_7E0", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1991"}, "freq": 0.25,
   "signals": [
@@ -460,21 +462,20 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "20E3"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_BP_ACT", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "kilopascal" }, "name": "Boost pressure, actual"}
+    {"id": "HOLDEN_BP_ACT", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "kilopascal" }, "name": "Boost pressure: actual"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "232C"}, "freq": 5,
   "signals": [
     {"id": "HOLDEN_AIR_TEMP_AMBIENT_2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "2344"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2344"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_EOP_ABS",      "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 4,               "unit": "kilopascal" }, "name": "Engine oil absolute pressure sensor"},
-    {"id": "HOLDEN_2500_EOP_ABS", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil absolute pressure"}
+    {"id": "HOLDEN_EOP_ABS", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil absolute pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "2345"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2345"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_EOP_ACT", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 4,               "unit": "kilopascal" }, "name": "Engine oil pressure, actual"},
-    {"id": "HOLDEN_EOP_V2",  "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"}
+    {"id": "HOLDEN_EOP",     "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"},
+    {"id": "HOLDEN_EOP_ACT", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 4,               "unit": "kilopascal" }, "name": "Engine oil pressure, actual"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2364"}, "freq": 1,
   "signals": [
@@ -522,11 +523,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "30AD"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_CHG_AIR_COOLER_T_1", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charge air cooler temperature sensor 1"}
+    {"id": "HOLDEN_CHARGE_AIR_COOLER_T_SNS_1", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charge air cooler temperature sensor 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "30AE"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_CHG_AIR_COOLER_T_2", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charge air cooler temperature sensor 2"}
+    {"id": "HOLDEN_CHARGE_AIR_COOLER_T_SNS_2", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charge air cooler temperature sensor 2"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3201"}, "freq": 0.25,
   "signals": [
@@ -538,19 +539,19 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "328A"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_BP_DES", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "kilopascal" }, "name": "Boost pressure, desired"}
+    {"id": "HOLDEN_BP_DES", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "kilopascal" }, "name": "Boost pressure: desired"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3318"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_EOP_CTRL_SOLENOID", "path": "Engine", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Engine oil pressure control solenoid valve command"}
+    {"id": "HOLDEN_EOP_CTRL_SOLENOID_VALVE_CMD", "path": "Engine", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Engine oil pressure control solenoid valve command"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "3372"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_PARTICULATE_MATTER_SNS_T_V2", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "mul": 1000, "div": 10000, "unit": "celsius" }, "name": "Particulate matter sensor temperature"}
+    {"id": "HOLDEN_PARTICULATE_MATTER_SNS_T", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "mul": 1000, "div": 10000, "unit": "celsius" }, "name": "Particulate matter sensor temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "3635"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_PARTICULATE_MATTER_SNS_SOOT_ACCUMULATION_V2", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 10000, "sign": true, "unit": "percent" }, "name": "Particulate matter sensor soot accumulation"}
+    {"id": "HOLDEN_PARTICULATE_MATTER_SNS_SOOT_ACCUMULATION", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 10000, "sign": true, "unit": "percent" }, "name": "Particulate matter sensor soot accumulation"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "36A7"}, "freq": 30,
   "signals": [
@@ -560,7 +561,7 @@
   "signals": [
     {"id": "HOLDEN_COOLING_FAN_CMD", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Cooling fan command"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "4DC0"}, "freq": 30,
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "4DC0"}, "freq": 1,
   "signals": [
     {"id": "HOLDEN_EO_LIFE_REMAINING", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Engine oil life remaining"}
   ]},
@@ -586,12 +587,12 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1942"}, "freq": 0.25,
   "signals": [
-    {"id": "HOLDEN_TRANS_RPM",           "path": "Transmission", "fmt": { "len": 16, "max": 8191,               "div": 8,               "unit": "rpm" }, "name": "Transmission RPM"},
-    {"id": "HOLDEN_OUTPUT_SHFT_SPD_7E1", "path": "Movement",     "fmt": { "len": 16, "max": 8191, "min": -8192, "div": 4, "sign": true, "unit": "rpm" }, "name": "AT output shaft speed"}
+    {"id": "HOLDEN_OUTPUT_SHFT_SPD_7E1", "path": "Movement",     "fmt": { "len": 16, "max": 8191, "min": -8192, "div": 4, "sign": true, "unit": "rpm" }, "name": "AT output shaft speed"},
+    {"id": "HOLDEN_TRANS_RPM",           "path": "Transmission", "fmt": { "len": 16, "max": 8191,               "div": 8,               "unit": "rpm" }, "name": "Transmission RPM"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1C24"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_HIGH_V_CIRCUIT_HPCM", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "High voltage circuit, hybrid powertrain control module"}
+    {"id": "HOLDEN_MG_V_2", "path": "Battery", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "MG voltage 2"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1C26"}, "freq": 5,
   "signals": [
@@ -615,20 +616,20 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2411"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_ST_CHG_RAW_2", "path": "Engine",  "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Battery pack state of charge raw LD 2"},
-    {"id": "HOLDEN_ST_CHG_RAW_2",          "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "scalar"  }, "name": "State of charge raw 2"}
+    {"id": "HOLDEN_ST_CHG_RAW_2",          "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "scalar"  }, "name": "State of charge raw 2"},
+    {"id": "HOLDEN_BAT_PACK_ST_CHG_RAW_2", "path": "Engine",  "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Battery pack state of charge raw LD 2"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2414"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_HIGH_V_CURRENT_HD", "path": "Engine", "fmt": { "len": 16, "max": 1638, "min": -1638, "div": 20, "sign": true, "unit": "amps" }, "name": "High voltage current HD"}
+    {"id": "HOLDEN_HIGH_V_CURRENT", "path": "Engine", "fmt": { "len": 16, "max": 1638, "min": -1638, "div": 20, "sign": true, "unit": "amps" }, "name": "High voltage current"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2416"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_TEMP_MAX_ALT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery pack maximum temperature, alternate"}
+    {"id": "HOLDEN_BATT_T_2416", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery temperature 2416"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2417"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_TEMP_MIN_ALT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery pack minimum temperature, alternate"}
+    {"id": "HOLDEN_BATT_T_2417", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery temperature 2417"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2426"}, "freq": 0.25,
   "signals": [
@@ -644,7 +645,7 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "242C"}, "freq": 0.25,
   "signals": [
-    {"id": "HOLDEN_BRAKE_TQ", "path": "Control", "fmt": { "len": 16, "max": 32767, "div": 2, "unit": "newtonMeters" }, "name": "Brake torque"}
+    {"id": "HOLDEN_BRAKE_TQ", "path": "Control", "fmt": { "len": 16, "max": 8191, "min": -8192, "div": 4, "sign": true, "unit": "newtonMeters" }, "name": "Brake torque"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2434"}, "freq": 0.25,
   "signals": [
@@ -696,7 +697,7 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2862"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_TRANS_P_V3", "path": "Transmission", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Transmission pressure"}
+    {"id": "HOLDEN_TRANS_P_V2", "path": "Transmission", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Transmission pressure"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2881"}, "freq": 1,
   "signals": [
@@ -712,7 +713,7 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2885"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_HIGH_V_MG_V", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "High voltage MG voltage"}
+    {"id": "HOLDEN_MGA_V", "path": "Battery", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "Motor-generator A voltage"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2886"}, "freq": 1,
   "signals": [
@@ -720,7 +721,7 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2889"}, "freq": 0.25,
   "signals": [
-    {"id": "HOLDEN_TRANS_GEAR_POS", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Transmission gear position"}
+    {"id": "HOLDEN_GEAR_POS_V2", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear, AT position"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "288A"}, "freq": 0.25,
   "signals": [
@@ -874,7 +875,7 @@
   "signals": [
     {"id": "HOLDEN_IGN_V_V2", "path": "Engine", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Ignition voltage"}
   ]},
-{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "1940"}, "freq": 5,
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "1940"}, "freq": 1,
   "signals": [
     {"id": "HOLDEN_ATF_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
@@ -888,7 +889,7 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "fcm1": true, "dbg": true, "cmd": {"22": "1991"}, "freq": 0.25,
   "signals": [
-    {"id": "HOLDEN_TC_SLIP_VSS_V2", "path": "Movement", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "mul": 1250, "div": 10000, "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"}
+    {"id": "HOLDEN_TC_SLIP_VSS", "path": "Movement", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "mul": 1250, "div": 10000, "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"}
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "199A"}, "freq": 0.25,
   "signals": [
@@ -916,7 +917,8 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "280D"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_ATF_T_VAR_6", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 6"}
+    {"id": "HOLDEN_ATF_T_VAR_6",      "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 6", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "HOLDEN_2500_ATF_T_VAR_6", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 6"}
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "2851"}, "freq": 1,
   "signals": [
@@ -924,11 +926,12 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "2862"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_TRANS_P_V2", "path": "Transmission", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Transmission pressure"}
+    {"id": "HOLDEN_TRANS_P_V3", "path": "Transmission", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Transmission pressure"}
   ]},
 { "hdr": "7E2", "rax": "7EA", "fcm1": true, "dbg": true, "cmd": {"22": "295A"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_TF_T_FLTED_V2", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, filtered"}
+    {"id": "HOLDEN_TF_T_FLTED",     "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, filtered", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "HOLDEN_TF_T_FLTED_7E2", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, filtered"}
   ]},
 { "hdr": "7E3", "rax": "7EB", "dbg": true, "cmd": {"22": "1B1A"}, "freq": 1,
   "signals": [
@@ -1010,9 +1013,9 @@
   "signals": [
     {"id": "HOLDEN_GEAR_RAT", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear ratio"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "1C43"}, "freq": 5,
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "1C43"}, "freq": 10,
   "signals": [
-    {"id": "HOLDEN_ELECTRONICS_CLT_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Electronics coolant temperature"}
+    {"id": "HOLDEN_PEM_T_V2", "path": "Electrical", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Power electronics coolant temperature"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "247A"}, "freq": 1,
   "signals": [
@@ -1032,8 +1035,8 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "41A3"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_CAP_AH_RAW_2017_2018", "path": "Engine",  "fmt": { "len": 16, "max": 6553,   "div": 10, "unit": "ampereHours" }, "name": "Battery pack capacity, raw"},
-    {"id": "HOLDEN_HVBAT_CAP_AH",                  "path": "Battery", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "ampereHours" }, "name": "HV battery capacity"}
+    {"id": "HOLDEN_HVBAT_CAP_AH",                  "path": "Battery", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "ampereHours" }, "name": "HV battery capacity"},
+    {"id": "HOLDEN_BAT_PACK_CAP_AH_RAW_2017_2018", "path": "Engine",  "fmt": { "len": 16, "max": 6553,   "div": 10, "unit": "ampereHours" }, "name": "Battery pack capacity, raw"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "41A4"}, "freq": 5,
   "signals": [
@@ -1055,10 +1058,10 @@
   "signals": [
     {"id": "HOLDEN_CABIN_AC_COMMAND_W", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "watts" }, "name": "Cabin A/C power, commanded"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "41B2"}, "freq": 1,
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "41B2"}, "freq": 0.25,
   "signals": [
-    {"id": "HOLDEN_CABIN_AC_MEAS_W",  "path": "Engine",   "fmt": { "len": 16, "max": 65535,                              "unit": "watts" }, "name": "Cabin A/C power, measured"},
-    {"id": "HOLDEN_BATT_CLT_PMP_RPM", "path": "Movement", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "rpm"   }, "name": "Battery coolant pump speed"}
+    {"id": "HOLDEN_BATT_CLT_PMP_RPM", "path": "Movement", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "rpm"   }, "name": "Battery coolant pump speed"},
+    {"id": "HOLDEN_CABIN_AC_MEAS_W",  "path": "Engine",   "fmt": { "len": 16, "max": 65535,                              "unit": "watts" }, "name": "Cabin A/C power, measured"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "41B3"}, "freq": 1,
   "signals": [
@@ -1066,7 +1069,7 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "41B4"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_CABIN_HEATER_MEAS_W", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "watts" }, "name": "Cabin heater power, measured"}
+    {"id": "HOLDEN_HEATER_CABIN", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "watts" }, "name": "Heater - cabin"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "41B5"}, "freq": 1,
   "signals": [
@@ -1074,7 +1077,7 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "41B6"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_BAT_HEATER_MEAS_W", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "watts" }, "name": "Battery heater power, measured"}
+    {"id": "HOLDEN_HEATER_BAT", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "watts" }, "name": "Battery heater power"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "41B7"}, "freq": 1,
   "signals": [
@@ -1106,8 +1109,8 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "4329"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_BAT_CELL_MIN_V", "path": "Engine",  "fmt": { "len": 16, "max": 39.32, "mul": 3,            "div": 5000, "unit": "volts" }, "name": "Battery cell minimum voltage"},
-    {"id": "HOLDEN_MG_V_6",         "path": "Battery", "fmt": { "len": 16, "max": 3880,  "mul": 0.0592111886,              "unit": "volts" }, "name": "MG voltage 6"}
+    {"id": "HOLDEN_MG_V_6",         "path": "Battery", "fmt": { "len": 16, "max": 3880,  "mul": 0.0592111886,              "unit": "volts" }, "name": "MG voltage 6"},
+    {"id": "HOLDEN_BAT_CELL_MIN_V", "path": "Engine",  "fmt": { "len": 16, "max": 39.32, "mul": 3,            "div": 5000, "unit": "volts" }, "name": "Battery cell minimum voltage"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "432A"}, "freq": 1,
   "signals": [
@@ -1123,8 +1126,8 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "432D"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_V_LD", "path": "Engine",  "fmt": { "len": 16, "max": 34078,   "mul": 13,   "div": 25, "unit": "volts" }, "name": "Battery pack voltage LD"},
-    {"id": "HOLDEN_HVBAT_V_V2",    "path": "Battery", "fmt": { "len": 16, "max": 34078.2, "mul": 0.52,            "unit": "volts" }, "name": "HV battery voltage",      "suggestedMetric": "tractionBatteryVoltage"}
+    {"id": "HOLDEN_HVBAT_V",       "path": "Battery", "fmt": { "len": 16, "max": 34078.2, "mul": 0.52,            "unit": "volts" }, "name": "HV battery voltage",      "suggestedMetric": "tractionBatteryVoltage"},
+    {"id": "HOLDEN_BAT_PACK_V_LD", "path": "Engine",  "fmt": { "len": 16, "max": 34078,   "mul": 13,   "div": 25, "unit": "volts" }, "name": "Battery pack voltage LD"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "432F"}, "freq": 1,
   "signals": [
@@ -1164,8 +1167,8 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "4356"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_HIGH_V_CURRENT",       "path": "Engine", "fmt": { "len": 16, "max": 4909, "min": -4908, "mul": -40,  "div": 267,  "sign": true, "unit": "amps" }, "name": "High voltage current"},
-    {"id": "HOLDEN_HIGH_V_CURRENT_HD_V2", "path": "Engine", "fmt": { "len": 16, "max": 4915, "min": -4915, "mul": -500, "div": 3333, "sign": true, "unit": "amps" }, "name": "High voltage current HD"}
+    {"id": "HOLDEN_HIGH_V_CURRENT_HD", "path": "Engine", "fmt": { "len": 16, "max": 4915, "min": -4915, "mul": -500, "div": 3333, "sign": true, "unit": "amps" }, "name": "High voltage current HD"},
+    {"id": "HOLDEN_HIGH_V_CURRENT_V2", "path": "Engine", "fmt": { "len": 16, "max": 4909, "min": -4908, "mul": -40,  "div": 267,  "sign": true, "unit": "amps" }, "name": "High voltage current"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "4357"}, "freq": 1,
   "signals": [
@@ -1225,8 +1228,8 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "437D"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_CHARGER_LAST_CHG_AC_2017_2018", "path": "Engine",  "fmt": { "len": 16, "max": 655,    "div": 100,                    "unit": "kilowattHours" }, "name": "Charger last charge AC energy"},
-    {"id": "HOLDEN_LAST_CHG_AC_KWH",               "path": "Battery", "fmt": { "len": 16, "max": 655.34, "div": 100, "nullmin": 655.35, "unit": "kilowattHours" }, "name": "AC energy from the wall, last or current charge"}
+    {"id": "HOLDEN_LAST_CHG_AC_KWH",               "path": "Battery", "fmt": { "len": 16, "max": 655.34, "div": 100, "nullmin": 655.35, "unit": "kilowattHours" }, "name": "AC energy from the wall, last or current charge"},
+    {"id": "HOLDEN_CHARGER_LAST_CHG_AC_2017_2018", "path": "Engine",  "fmt": { "len": 16, "max": 655,    "div": 100,                    "unit": "kilowattHours" }, "name": "Charger last charge AC energy"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "437F"}, "freq": 1,
   "signals": [
@@ -1236,10 +1239,10 @@
   "signals": [
     {"id": "HOLDEN_CHG_LIFETIME", "path": "Battery", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Lifetime charge energy"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "439E"}, "freq": 1,
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "439E"}, "freq": 30,
   "signals": [
-    {"id": "HOLDEN_BAT_HEATER_COMMAND", "path": "Engine",  "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51,   "unit": "percent" }, "name": "Battery heater, commanded"},
-    {"id": "HOLDEN_HEATER_BAT_PCT",     "path": "Battery", "fmt": { "len": 8, "max": 100,            "div": 2.55, "unit": "percent" }, "name": "Battery heater duty"}
+    {"id": "HOLDEN_HEATER_BAT_PCT",     "path": "Battery", "fmt": { "len": 8, "max": 100,            "div": 2.55, "unit": "percent" }, "name": "Battery heater duty"},
+    {"id": "HOLDEN_BAT_HEATER_COMMAND", "path": "Engine",  "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51,   "unit": "percent" }, "name": "Battery heater, commanded"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "43A5"}, "freq": 3600,
   "signals": [
@@ -1251,7 +1254,7 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "43AF"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_HVBAT_SOC_RAW", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "HV battery charge (raw)", "suggestedMetric": "stateOfCharge"}
+    {"id": "HOLDEN_HVBAT_SOC_RAW", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "HV battery charge, raw", "suggestedMetric": "stateOfCharge"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "43B0"}, "freq": 1,
   "signals": [
@@ -1366,16 +1369,16 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "801E"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_AIR_TEMP_UNFILTERED", "path": "Engine", "fmt": { "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Air temperature unfiltered"}
+    {"id": "HOLDEN_AIR_T_1", "path": "Engine", "fmt": { "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Air temperature 1"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "801F"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_AIR_TEMP_FILTERED", "path": "Engine", "fmt": { "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Air temperature filtered"}
+    {"id": "HOLDEN_AIR_T_2", "path": "Engine", "fmt": { "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Air temperature 2"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "82B2"}, "freq": 1,
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "82B2"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_CABIN_AC_LOW_SIDE_P", "path": "Engine", "fmt": { "len": 8, "max": 695,               "mul": 13647, "div": 5000,             "unit": "kilopascal" }, "name": "Cabin A/C low side sensor pressure"},
-    {"id": "HOLDEN_VENT_T",              "path": "Engine", "fmt": { "len": 8, "max": 21.87, "min": -10,               "div": 8,    "add": -10, "unit": "celsius"    }, "name": "Vent temperature"}
+    {"id": "HOLDEN_VENT_T",              "path": "Engine", "fmt": { "len": 8, "max": 21.87, "min": -10,               "div": 8,    "add": -10, "unit": "celsius"    }, "name": "Vent temperature"},
+    {"id": "HOLDEN_CABIN_AC_LOW_SIDE_P", "path": "Engine", "fmt": { "len": 8, "max": 695,               "mul": 13647, "div": 5000,             "unit": "kilopascal" }, "name": "Cabin A/C low side sensor pressure"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "82B3"}, "freq": 1,
   "signals": [
@@ -1419,37 +1422,37 @@
   ]},
 { "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "40D3"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_BAT_5V_REFERENCE_V_1",  "path": "Engine",  "fmt": { "len": 16, "max": 7.49,           "div": 13107, "add": 5, "sign": true, "unit": "volts" }, "name": "Battery 5V reference voltage"},
-    {"id": "HOLDEN_BECM_5V_REFERENCE_V_1", "path": "Battery", "fmt": { "len": 16, "max": 7.49, "mul": 5, "div": 65536, "add": 5, "sign": true, "unit": "volts" }, "name": "Battery controller 5V reference voltage"}
+    {"id": "HOLDEN_BECM_5V_REFERENCE_V_1", "path": "Battery", "fmt": { "len": 16, "max": 7.49, "mul": 5, "div": 65536, "add": 5, "sign": true, "unit": "volts" }, "name": "Battery controller 5V reference voltage"},
+    {"id": "HOLDEN_BAT_5V_REFERENCE_V_1",  "path": "Engine",  "fmt": { "len": 16, "max": 7.49,           "div": 13107, "add": 5, "sign": true, "unit": "volts" }, "name": "Battery 5V reference voltage"}
   ]},
 { "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "40D4"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_CURRENT_HD", "path": "Engine",  "fmt": { "len": 16, "max": 1638,   "min": -1638,               "div": 20, "sign": true, "unit": "amps" }, "name": "Battery pack current HD"},
-    {"id": "HOLDEN_HVBAT_A",             "path": "Battery", "fmt": { "len": 16, "max": 1638.4, "min": -1638.35, "mul": -1, "div": 20, "sign": true, "unit": "amps" }, "name": "HV battery current",      "suggestedMetric": "tractionBatteryCurrent"}
+    {"id": "HOLDEN_HVBAT_A",             "path": "Battery", "fmt": { "len": 16, "max": 1638.4, "min": -1638.35, "mul": -1, "div": 20, "sign": true, "unit": "amps" }, "name": "HV battery current",      "suggestedMetric": "tractionBatteryCurrent"},
+    {"id": "HOLDEN_BAT_PACK_CURRENT_HD", "path": "Engine",  "fmt": { "len": 16, "max": 1638,   "min": -1638,               "div": 20, "sign": true, "unit": "amps" }, "name": "Battery pack current HD"}
   ]},
 { "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "40D7"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_TEMP_1", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery pack temperature 1"}
+    {"id": "HOLDEN_BECM_BAT_SECTION_1_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery section 1 temperature"}
   ]},
 { "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "40D9"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_TEMP_2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery pack temperature 2"}
+    {"id": "HOLDEN_BECM_BAT_SECTION_2_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery section 2 temperature"}
   ]},
 { "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "40DB"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_TEMP_3", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery pack temperature 3"}
+    {"id": "HOLDEN_BECM_BAT_SECTION_3_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery section 3 temperature"}
   ]},
 { "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "40DD"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_TEMP_4", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery pack temperature 4"}
+    {"id": "HOLDEN_BECM_BAT_SECTION_4_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery section 4 temperature"}
   ]},
 { "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "40DF"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_TEMP_5", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery pack temperature 5"}
+    {"id": "HOLDEN_BECM_BAT_SECTION_5_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery section 5 temperature"}
   ]},
 { "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "40E1"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_BAT_PACK_TEMP_6", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery pack temperature 6"}
+    {"id": "HOLDEN_BECM_BAT_SECTION_6_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery section 6 temperature"}
   ]},
 { "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "4181"}, "freq": 10,
   "signals": [
@@ -1853,8 +1856,8 @@
   ]},
 { "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "C218"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_BAT_CELL_AVG_V",  "path": "Engine",  "fmt": { "len": 16, "max": 5,              "div": 13107, "unit": "volts" }, "name": "Battery cell average voltage"},
-    {"id": "HOLDEN_BECM_AVG_CELL_V", "path": "Battery", "fmt": { "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "volts" }, "name": "Battery average cell voltage"}
+    {"id": "HOLDEN_BECM_AVG_CELL_V", "path": "Battery", "fmt": { "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "volts" }, "name": "Battery average cell voltage"},
+    {"id": "HOLDEN_BAT_CELL_AVG_V",  "path": "Engine",  "fmt": { "len": 16, "max": 5,              "div": 13107, "unit": "volts" }, "name": "Battery cell average voltage"}
   ]},
 { "hdr": "DA11", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "34D8"}, "freq": 1,
   "signals": [
@@ -1900,8 +1903,8 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "009D"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_TOTAL_FUEL_CONSUMPTION_RATE", "path": "Fuel", "fmt": { "len": 16, "max": 1310.7, "mul": 200, "div": 10000, "unit": "gramsPerSecond" }, "name": "Total fuel consumption rate"},
-    {"id": "HOLDEN_TOT_FUEL_CONS_RATE_V2",       "path": "Fuel", "fmt": { "len": 16, "max": 1310,               "div": 50,    "unit": "gramsPerSecond" }, "name": "Total fuel consumption rate"}
+    {"id": "HOLDEN_TOTAL_FUEL_CONSUMPTION_RATE_V2", "path": "Fuel", "fmt": { "len": 16, "max": 1310.7, "mul": 200, "div": 10000, "unit": "gramsPerSecond" }, "name": "Total fuel consumption rate"},
+    {"id": "HOLDEN_TOT_FUEL_CONS_RATE",             "path": "Fuel", "fmt": { "len": 16, "max": 1310,               "div": 50,    "unit": "gramsPerSecond" }, "name": "Total fuel consumption rate"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1141"}, "freq": 1,
   "signals": [
@@ -1993,13 +1996,13 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EA"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MISFIRES_C5_CUR", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 5"},
-    {"id": "HOLDEN_MIS_CURRENT_5",   "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 5"}
+    {"id": "HOLDEN_MISFIRES_C5_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 5"},
+    {"id": "HOLDEN_MIS_CURRENT_5",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 5"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EB"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MISFIRES_C6_CUR", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 6"},
-    {"id": "HOLDEN_MIS_CURRENT_6",   "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 6"}
+    {"id": "HOLDEN_MISFIRES_C6_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 6"},
+    {"id": "HOLDEN_MIS_CURRENT_6",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 6"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EC"}, "freq": 1,
   "signals": [
@@ -2013,11 +2016,11 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11F8"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HISTORY_5", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 5"}
+    {"id": "HOLDEN_MIS_HISTORY_5_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 5"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11F9"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HISTORY_6", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 6"}
+    {"id": "HOLDEN_MIS_HISTORY_6_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 6"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11FA"}, "freq": 1,
   "signals": [
@@ -2033,39 +2036,39 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1201"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HISTORY_1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 1"}
+    {"id": "HOLDEN_MIS_HISTORY_1_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 1"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1202"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HISTORY_2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 2"}
+    {"id": "HOLDEN_MIS_HISTORY_2_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 2"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1203"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HISTORY_3", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 3"}
+    {"id": "HOLDEN_MIS_HISTORY_3_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 3"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1204"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MIS_HISTORY_4", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 4"}
+    {"id": "HOLDEN_MIS_HISTORY_4_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 4"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1205"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MISFIRES_C2_CUR", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 2"},
-    {"id": "HOLDEN_MIS_CURRENT_2",   "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 2"}
+    {"id": "HOLDEN_MISFIRES_C2_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 2"},
+    {"id": "HOLDEN_MIS_CURRENT_2",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 2"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1206"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MISFIRES_C1_CUR", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 1"},
-    {"id": "HOLDEN_MIS_CURRENT_1",   "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 1"}
+    {"id": "HOLDEN_MISFIRES_C1_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 1"},
+    {"id": "HOLDEN_MIS_CURRENT_1",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 1"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1207"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MISFIRES_C3_CUR", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 3"},
-    {"id": "HOLDEN_MIS_CURRENT_3",   "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 3"}
+    {"id": "HOLDEN_MISFIRES_C3_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 3"},
+    {"id": "HOLDEN_MIS_CURRENT_3",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 3"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1208"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_MISFIRES_C4_CUR", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 4"},
-    {"id": "HOLDEN_MIS_CURRENT_4",   "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 4"}
+    {"id": "HOLDEN_MISFIRES_C4_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 4"},
+    {"id": "HOLDEN_MIS_CURRENT_4",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 4"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1251"}, "freq": 1,
   "signals": [
@@ -2085,11 +2088,11 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "12C3"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_INJECTOR_DUTY_CYCLE_BANK_1", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 1"}
+    {"id": "HOLDEN_INJECTOR_DUTY_CYCLE_BANK_1_V2", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 1"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "12C4"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_INJECTOR_DUTY_CYCLE_BANK_2", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 2"}
+    {"id": "HOLDEN_INJECTOR_DUTY_CYCLE_BANK_2_V2", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 2"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "12D9"}, "freq": 1,
   "signals": [
@@ -2097,11 +2100,11 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "13AF"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_COOLING_FAN_MOTOR_CMD", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Cooling fan motor command"}
+    {"id": "HOLDEN_COOLING_FAN_MOTOR_CMD_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Cooling fan motor command"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1470"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_EOP_V3",     "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"},
+    {"id": "HOLDEN_EOP_V2",     "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"},
     {"id": "HOLDEN_EOP_DA11_2", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 4,               "unit": "kilopascal" }, "name": "Engine oil pressure"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1538"}, "freq": 5,
@@ -2323,11 +2326,11 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "30AD"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_CHARGE_AIR_COOLER_T_SNS_1", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charge air cooler temperature sensor 1"}
+    {"id": "HOLDEN_CHARGE_AIR_COOLER_T_SNS_1_V2", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charge air cooler temperature sensor 1"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "30AE"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_CHARGE_AIR_COOLER_T_SNS_2", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charge air cooler temperature sensor 2"}
+    {"id": "HOLDEN_CHARGE_AIR_COOLER_T_SNS_2_V2", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charge air cooler temperature sensor 2"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "3201"}, "freq": 0.25,
   "signals": [
@@ -2345,11 +2348,11 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "3318"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_EOP_CTRL_SOLENOID_VALVE_CMD", "path": "Engine", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Engine oil pressure control solenoid valve command"}
+    {"id": "HOLDEN_EOP_CTRL_SOLENOID_VALVE_CMD_V2", "path": "Engine", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Engine oil pressure control solenoid valve command"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "3372"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_PARTICULATE_MATTER_SNS_T", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "mul": 1000, "div": 10000, "unit": "celsius" }, "name": "Particulate matter sensor temperature"}
+    {"id": "HOLDEN_PARTICULATE_MATTER_SNS_T_V2", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "mul": 1000, "div": 10000, "unit": "celsius" }, "name": "Particulate matter sensor temperature"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "3375"}, "freq": 1,
   "signals": [
@@ -2361,7 +2364,7 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "3635"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_PARTICULATE_MATTER_SNS_SOOT_ACCUMULATION", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 10000, "sign": true, "unit": "percent" }, "name": "Particulate matter sensor soot accumulation"}
+    {"id": "HOLDEN_PARTICULATE_MATTER_SNS_SOOT_ACCUMULATION_V2", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 10000, "sign": true, "unit": "percent" }, "name": "Particulate matter sensor soot accumulation"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "36A7"}, "freq": 30,
   "signals": [
@@ -2404,7 +2407,7 @@
   ]},
 { "hdr": "DA18", "rax": "2AF118", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1991"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_TC_SLIP_VSS",               "path": "Movement", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "mul": 1250, "div": 10000, "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"},
+    {"id": "HOLDEN_TC_SLIP_VSS_V2",            "path": "Movement", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "mul": 1250, "div": 10000, "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"},
     {"id": "HOLDEN_TQ_CONV_CLU_SLIP_SPD_DA18", "path": "Movement", "fmt": { "len": 16, "max": 4095,     "min": -4096,              "div": 8,     "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"}
   ]},
 { "hdr": "DA18", "rax": "2AF118", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1B30"}, "freq": 0.25,
@@ -2455,7 +2458,7 @@
   ]},
 { "hdr": "DA18", "rax": "2AF118", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "295A"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_TF_T_FLTED",      "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, filtered", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "HOLDEN_TF_T_FLTED_V2",   "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, filtered", "suggestedMetric": "transmissionFluidTemperature"},
     {"id": "HOLDEN_TF_T_FLTED_DA18", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, filtered"}
   ]},
 { "hdr": "DA1A", "rax": "2AF11A", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "448F"}, "freq": 30,
@@ -2464,8 +2467,8 @@
   ]},
 { "hdr": "DA1D", "dbg": true, "cmd": {"22": "33E5"}, "freq": 10,
   "signals": [
-    {"id": "HOLDEN_12V_V",   "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "12V battery voltage",  "suggestedMetric": "starterBatteryVoltage",            "description": "12 V system voltage from the Drive Motor Control Module (matches Chevrolet-Equinox-EV DA1D 2233E5). Note: LYRIQ command_support docs list this DID as HV pack voltage - on-vehicle it reads 13.1-13.9 V under DC-DC float and does not track pack voltage."},
-    {"id": "HOLDEN_HVBAT_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "DMCM battery voltage", "description": "From the Drive Motor Control Module."}
+    {"id": "HOLDEN_12V_V",      "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "12V battery voltage",  "suggestedMetric": "starterBatteryVoltage",            "description": "12 V system voltage from the Drive Motor Control Module (matches Chevrolet-Equinox-EV DA1D 2233E5). Note: LYRIQ command_support docs list this DID as HV pack voltage - on-vehicle it reads 13.1-13.9 V under DC-DC float and does not track pack voltage."},
+    {"id": "HOLDEN_HVBAT_V_V2", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "DMCM battery voltage", "description": "From the Drive Motor Control Module."}
   ]},
 { "hdr": "DA28", "rax": "2AF128", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "4A7A"}, "freq": 0.25,
   "signals": [

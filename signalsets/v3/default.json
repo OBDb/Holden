@@ -9,6 +9,7 @@
     { "hdr": "DA11", "rax": "2AF111", "type": "engine" },
     { "hdr": "DA18",                  "type": "transmission" },
     { "hdr": "DA18", "rax": "2AF118", "type": "transmission" },
+    { "hdr": "DA1A",                  "type": "cluster" },
     { "hdr": "DA1A", "rax": "2AF11A", "type": "cluster" },
     { "hdr": "DA28",                  "type": "abs" },
     { "hdr": "DA28", "rax": "2AF128", "type": "abs" },
@@ -869,7 +870,7 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "1124"}, "freq": 0.25,
   "signals": [
-    {"id": "HOLDEN_BRAKE_PEDAL_POS_V3", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake pedal position circuit signal"}
+    {"id": "HOLDEN_BRAKE_PEDAL_POS_V2", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake pedal position circuit signal"}
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "1141"}, "freq": 1,
   "signals": [
@@ -885,7 +886,7 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "1942"}, "freq": 0.25,
   "signals": [
-    {"id": "HOLDEN_OUTPUT_SHFT_SPD_V3", "path": "Movement", "fmt": { "len": 8, "max": 63.75, "div": 4, "unit": "rpm" }, "name": "Output shaft speed"}
+    {"id": "HOLDEN_OUTPUT_SHFT_SPD_V2", "path": "Movement", "fmt": { "len": 8, "max": 63.75, "div": 4, "unit": "rpm" }, "name": "Output shaft speed"}
   ]},
 { "hdr": "7E2", "rax": "7EA", "fcm1": true, "dbg": true, "cmd": {"22": "1991"}, "freq": 0.25,
   "signals": [
@@ -913,7 +914,7 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "2434"}, "freq": 0.25,
   "signals": [
-    {"id": "HOLDEN_AXLE_TQ_DRIVER_REQ_V3", "path": "Engine", "fmt": { "len": 16, "max": 43001, "min": -22534, "add": -22534, "unit": "newtonMeters" }, "name": "Axle torque driver requested"}
+    {"id": "HOLDEN_AXLE_TQ_DRIVER_REQ_V2", "path": "Engine", "fmt": { "len": 16, "max": 43001, "min": -22534, "add": -22534, "unit": "newtonMeters" }, "name": "Axle torque driver requested"}
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "280D"}, "freq": 5,
   "signals": [
@@ -1861,8 +1862,8 @@
   ]},
 { "hdr": "DA11", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "34D8"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_DPF_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 655.35,                 "mul": 100, "div": 10000,               "unit": "kilopascal" }, "name": "Particulate filter pressure"},
-    {"id": "HOLDEN_DPF_PRES",  "path": "Engine", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "mul": 100, "div": 10000, "sign": true, "unit": "kilopascal" }, "name": "Diesel particulate filter, pressure"}
+    {"id": "HOLDEN_DPF_PRES",  "path": "Engine", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "mul": 100, "div": 10000, "sign": true, "unit": "kilopascal" }, "name": "Diesel particulate filter, pressure"},
+    {"id": "HOLDEN_DPF_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 655.35,                 "mul": 100, "div": 10000,               "unit": "kilopascal" }, "name": "Particulate filter pressure"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "000D"}, "freq": 0.25,
   "signals": [
@@ -2258,11 +2259,11 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "20F7"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_DPF_AVG_DIST_BETWEEN_REGENS", "path": "Trips", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Diesel particulate filter, average distance between regenerations"}
+    {"id": "HOLDEN_DPF_AVG_DIST_BETWEEN_REGENS", "path": "Trips", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Diesel particulate filter, average distance between regeneration events"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "20F8"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_DPF_AVG_FLT_INLET_T_DURING_REGEN", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "seconds" }, "name": "Diesel particulate filter, average filter inlet temperature during regeneration"}
+    {"id": "HOLDEN_DPF_AVG_FLT_INLET_T_DURING_REGEN", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Diesel particulate filter, average filter inlet temperature during regeneration"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "20F9"}, "freq": 1,
   "signals": [
@@ -2302,11 +2303,11 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "303A"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_DPF_EGT_1", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Diesel particulate filter, exhaust gas temperature 1"}
+    {"id": "HOLDEN_DPF_EGT_1", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Diesel particulate filter, exhaust gas temperature 1"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "303B"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_DPF_EGT_2", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Diesel particulate filter, exhaust gas temperature 2"}
+    {"id": "HOLDEN_DPF_EGT_2", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Diesel particulate filter, exhaust gas temperature 2"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "303E"}, "freq": 1,
   "signals": [
@@ -2314,7 +2315,7 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "304B"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_DPF_NUMBER_OF_COMPLETED_REGENS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Diesel particulate filter, number of completed regenerations"}
+    {"id": "HOLDEN_DPF_NUMBER_OF_COMPLETED_REGENS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Diesel particulate filter, number of completed regeneration events"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "30A9"}, "freq": 1,
   "signals": [
@@ -2360,7 +2361,7 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "34D9"}, "freq": 1,
   "signals": [
-    {"id": "HOLDEN_DPF_CORRECTED_PRES", "path": "Engine", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "mul": 100, "div": 10000, "sign": true, "unit": "kilopascal" }, "name": "Diesel particulate filter, corrected pressure"}
+    {"id": "HOLDEN_DPF_CORRECTED_PRES", "path": "Engine", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "mul": 100, "div": 10000, "sign": true, "nullmax": 327.67, "unit": "kilopascal" }, "name": "Diesel particulate filter, corrected pressure"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "3635"}, "freq": 1,
   "signals": [

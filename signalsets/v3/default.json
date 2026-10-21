@@ -918,8 +918,8 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "280D"}, "freq": 5,
   "signals": [
-    {"id": "HOLDEN_ATF_T_VAR_6",      "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 6", "suggestedMetric": "transmissionFluidTemperature"},
-    {"id": "HOLDEN_2500_ATF_T_VAR_6", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 6"}
+    {"id": "HOLDEN_ATF_T_VAR_6",       "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 6", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "HOLDEN_CARGO_ATF_T_VAR_6", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 6"}
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "2851"}, "freq": 1,
   "signals": [
@@ -2553,23 +2553,23 @@
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "5005"}, "freq": 15,
   "signals": [
-    {"id": "HOLDEN_TP_FL_2",    "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "HOLDEN_TP_FL_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
+    {"id": "HOLDEN_TP_FL_2",          "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "HOLDEN_CARGO_TP_FL_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "5006"}, "freq": 15,
   "signals": [
-    {"id": "HOLDEN_TP_FR_2",    "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
-    {"id": "HOLDEN_TP_FR_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+    {"id": "HOLDEN_TP_FR_2",          "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "HOLDEN_CARGO_TP_FR_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "5007"}, "freq": 15,
   "signals": [
-    {"id": "HOLDEN_TP_RR_2",    "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"},
-    {"id": "HOLDEN_TP_RR_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
+    {"id": "HOLDEN_TP_RR_2",          "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"},
+    {"id": "HOLDEN_CARGO_TP_RR_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "5008"}, "freq": 15,
   "signals": [
-    {"id": "HOLDEN_TP_RL_2",    "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "HOLDEN_TP_RL_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
+    {"id": "HOLDEN_TP_RL_2",          "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "HOLDEN_CARGO_TP_RL_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
   ]},
 { "hdr": "DACB", "dbg": true, "cmd": {"22": "27C6"}, "freq": 0.5,
   "signals": [
